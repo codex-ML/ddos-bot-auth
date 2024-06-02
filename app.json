@@ -1,7 +1,7 @@
 {
   "name": "My Flask and Pyrogram Bot App",
   "description": "A Heroku app with both a Flask web server and a Pyrogram bot.",
-  "repository": "https://github.com/your-repo-url",
+  "repository": "https://github.com/codex-ML/ddos-bot-auth",
   "stack": "container",
   "env": {
     "API_ID": {
