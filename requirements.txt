@@ -1,6 +1,6 @@
 #nmap from  docker
 pyrogram
-git+https://github.com/codex-ML/pynet.git
+pybotnet
 asyncio
 requests
 pyngrok
