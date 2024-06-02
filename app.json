@@ -1,0 +1,79 @@
+{
+  "name": "My Flask and Pyrogram Bot App",
+  "description": "A Heroku app with both a Flask web server and a Pyrogram bot.",
+  "repository": "https://github.com/your-repo-url",
+  "stack": "container",
+  "env": {
+    "API_ID": {
+      "description": "API ID for Pyrogram",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "API Hash for Pyrogram",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Bot Token for Pyrogram",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Owner ID",
+      "required": true
+    },
+    "LOG_GROUP": {
+      "description": "Log Group ID",
+      "required": true
+    },
+    "LOG_CHANNEL": {
+      "description": "Log Channel ID",
+      "required": true
+    },
+    "DB_NAME": {
+      "description": "Database Name",
+      "required": true
+    },
+    "SECRET_KEY": {
+      "description": "Secret Key for Flask",
+      "required": true
+    },
+    "NGROK_CONFIG": {
+      "description": "Ngrok configuration token",
+      "required": true
+    },
+    "LOGO": {
+      "description": "URL for the logo image",
+      "required": true
+    },
+    "DATE_KEYS": {
+      "description": "Date Keys",
+      "required": true
+    },
+    "BROADCAST_AS_COPY": {
+      "description": "Broadcast as copy",
+      "required": true,
+      "value": "False"
+    },
+    "AUTH_USERS": {
+      "description": "Authorized users",
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "standard"
+    },
+    "worker": {
+      "quantity": 1,
+      "size": "standard"
+    }
+  },
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
