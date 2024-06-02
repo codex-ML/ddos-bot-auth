@@ -26,3 +26,7 @@ Performance/Private/Shield-2XL 	126 GB 	100% 	100x
 ```
 
 #it need minimum 16 gb ram 1gb data port 
+
+#heroku deploy
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/codex-ML/ddos-bot-auth)
