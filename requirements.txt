@@ -1,0 +1,10 @@
+#nmap from  docker
+pyrogram
+git+https://github.com/codex-ML/pynet.git
+asyncio
+requests
+pyngrok
+Flask
+aiofiles
+random
+host-checker

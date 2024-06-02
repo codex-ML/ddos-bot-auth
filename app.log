@@ -1,0 +1,22 @@
+2024-06-02 05:40:55,085 - INFO - This is an info message
+2024-06-02 05:40:55,085 - WARNING - This is a warning message
+2024-06-02 05:40:55,085 - ERROR - This is an error message
+2024-06-02 05:40:55,085 - CRITICAL - This is a critical message
+2024-06-02 05:40:55,186 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.43:5000
+2024-06-02 05:40:55,187 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-02 05:40:56,208 - INFO - Connecting...
+2024-06-02 05:40:56,270 - INFO - Connected! Production DC5 - IPv4
+2024-06-02 05:40:56,271 - INFO - NetworkTask started
+2024-06-02 05:40:56,603 - INFO - Session initialized: Layer 158
+2024-06-02 05:40:56,603 - INFO - Device: CPython 3.10.14 - Pyrogram 2.0.106
+2024-06-02 05:40:56,603 - INFO - System: Linux 6.5.0-1020-gcp (en)
+2024-06-02 05:40:56,603 - INFO - Session started
+2024-06-02 05:40:56,605 - INFO - PingTask started
+2024-06-02 05:40:56,772 - INFO - Started 12 HandlerTasks
+2024-06-02 05:40:56,775 - INFO - Unclosed tags: <code> (x50)
+2024-06-02 05:41:11,019 - INFO - t=2024-06-02T05:41:11+0000 lvl=info msg="join connections" obj=join id=0a5b61ce7c9d l=127.0.0.1:5000 r=149.154.161.230:58532
+2024-06-02 05:41:11,028 - INFO - 127.0.0.1 - - [02/Jun/2024 05:41:11] "GET / HTTP/1.1" 200 -
+2024-06-02 05:41:19,277 - INFO - Unclosed tags: <code> (x50)
