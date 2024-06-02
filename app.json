@@ -73,7 +73,7 @@
   ],
   "buildpacks": [
     {
-      "url": "heroku/python"
+      "url": "heroku/python:3.10-slim"
     }
   ]
 }
