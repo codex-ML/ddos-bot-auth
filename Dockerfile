@@ -6,7 +6,9 @@ WORKDIR /app
 
 # Copy the current directory contents into the container at /app
 COPY . /app
-
+EXPOSE 5000
+EXPOSE 4040
+EXPOSE 5900
 # Install any needed dependencies specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
