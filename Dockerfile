@@ -6,20 +6,21 @@ WORKDIR /app
 
 # Copy the current directory contents into the container at /app
 COPY . /app
-EXPOSE 5000
-EXPOSE 4040
-EXPOSE 5900
+
 # Install any needed dependencies specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Install additional packages
 RUN apt-get update && apt-get install -y nmap
-# Copy your pre-compiled C binary into the container
-COPY udp.py /app/udp.py
-COPY udpp.py /app/udpp.py
-# Make the binary executable
-RUN chmod +x /app/udpp.py
+
+# Ensure the necessary scripts have execution permissions
 RUN chmod +x /app/udp.py
-# Run python script when the container launches
+RUN chmod +x /app/udpp.py
+RUN chmod +x /app/bgmi
+# Expose the ports the app will run on
+EXPOSE 5000
+EXPOSE 4040
+EXPOSE 5900
+
+# Run the application
 CMD ["python", "main.py"]
-
-
